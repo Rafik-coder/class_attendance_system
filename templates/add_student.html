@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Attendance System</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    
+</head>
+<body style="height: 100vh">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-6" style="height: fit-content">
+            <form method="POST" enctype="multipart/form-data">
+                <h4 class="text-center">Add Student Form</h4>
+                <input type="text" class="form-control" placeholder="Student Name" name="s_name" /><br>
+                <input type="text" class="form-control" placeholder="Student Course" name="s_course" /><br>
+                <input type="text" class="form-control" placeholder="Student Index Number" name="s_index" /><br>
+                <input type="file" class="form-control" placeholder="Picture" name="s_pic" /><br>
+                <input type="submit" value="Add" class="btn btn-primary form-control" name="add_s" />
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootrap.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootrap.min.js') }}"></script>
+</body>
+</html>
+
